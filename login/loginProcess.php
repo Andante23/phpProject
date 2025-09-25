@@ -1,6 +1,6 @@
 <?php
 
-include("../db.php");
+
 
 
 
@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
     $usr_pw = $_POST['usr_pw'];
 
 
-
+      include("../db.php");
       include("../lib/dbPrepareState.php");
 
 $sql = "SELECT * FROM users WHERE usr_idea = ? AND usr_pw = ? ";
