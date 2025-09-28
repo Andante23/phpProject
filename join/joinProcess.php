@@ -1,5 +1,7 @@
 <?php
 
+try{
+
 include("../db.php");
 
 
@@ -9,6 +11,8 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
     exit;
 }else{
   
+
+    
 
         $usr_idea = $_POST['usr_idea'];
         $usr_pw = $_POST['usr_pw'];
@@ -27,10 +31,12 @@ if($_SERVER['REQUEST_METHOD'] != 'POST'){
             echo "<script>alert('회원가입에 실패했습니다.'); location.href='join.php';</script>";
         }
 
-
-
     }
 
 
+}catch(Exception $e){
+    error_log($e->getMessage());
+    echo "<script>alert('오류가 발생했습니다. 관리자에게 문의하세요.'); location.href='join.php';</script>";
+}
 
 ?>

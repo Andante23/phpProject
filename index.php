@@ -14,20 +14,18 @@
 
 
    if(isset($_SESSION['user_id']) && isset($_SESSION['user_name']))
-  {
-
+   {
      session_start();
-    echo "안녕하세요" . $_SESSION['user_name'] . "님";
-  }else
+     echo "안녕하세요" . $_SESSION['user_name'] . "님";
+   }
+  else
   {
- 
     echo "
          <div>
             <a href='login/login.php'>로그인</a>
             <a href='join/join.php'>회원가입</a>
          </div>
-         
-    ";
+         ";
    }
 
 ?> 
