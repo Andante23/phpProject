@@ -8,7 +8,7 @@
 <body>
    <?php
 
- include 'db/con.php';
+ include './db/con.php';
 
 
 
@@ -23,7 +23,7 @@
     echo "
          <div>
             <a href='login/login.php'>로그인</a>
-            <a href='join/join.php'>회원가입</a>
+            <a href='join/join.html'>회원가입</a>
          </div>
          ";
    }

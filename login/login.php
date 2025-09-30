@@ -7,11 +7,14 @@
 </head>
 <body>
 
- <form action="login/loginProcess.php" method="post">
+ <form action="login/loginProcess.php" id="loginForm" method="post">
      <input type="text" name="usr_idea" placeholder="아이디" minlength=10 maxlength=33 required>
      <input type="password" name="usr_pw" placeholder="비밀번호" minlength=10 maxlength=33  required>
      <input type="submit" value="로그인">
  </form>
+
+
+
 
 
 </body>
